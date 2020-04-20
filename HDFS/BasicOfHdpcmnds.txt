@@ -1,0 +1,70 @@
+Hadoop Shell Commands to Manage HDFS
+•	fsck
+HDFS Command to check the health of the Hadoop file system.
+Command: hdfs fsck /
+•	ls
+HDFS Command to display the list of Files and Directories in HDFS.
+Command: hdfs dfs –ls /
+•	mkdir
+HDFS Command to create the directory in HDFS.
+Usage: hdfs dfs –mkdir /directory_name
+•	touchz
+HDFS Command to create a file in HDFS with file size 0 bytes.
+Usage: hdfs dfs –touchz /directory/filename
+•	du
+HDFS Command to check the file size. 
+Usage: hdfs dfs –du –s /directory/filename
+•	cat
+HDFS Command that reads a file on HDFS and prints the content of that file to the standard output.
+Usage: hdfs dfs –cat /path/to/file_in_hdfs
+•	text
+HDFS Command that takes a source file and outputs the file in text format.
+Usage: hdfs dfs –text /directory/filename
+•	copyFromLocal
+HDFS Command to copy the file from a Local file system to HDFS.
+Usage: hdfs dfs -copyFromLocal <localsrc> <hdfs destination> 
+•	copyToLocal
+HDFS Command to copy the file from HDFS to Local File System.
+Usage: hdfs dfs -copyToLocal <hdfs source> <localdst>
+•	put
+HDFS Command to copy single source or multiple sources from local file system to the destination file system.
+Usage: hdfs dfs -put <localsrc> <destination>
+•	get
+HDFS Command to copy files from hdfs to the local file system.
+Usage: hdfs dfs -get <src> <localdst>
+•	count
+HDFS Command to count the number of directories, files, and bytes under the paths that match the specified file pattern.
+Usage: hdfs dfs -count <path>
+•	rm
+HDFS Command to remove the file from HDFS.
+Usage: hdfs dfs –rm <path>     
+•	rm -r
+HDFS Command to remove the entire directory and all of its content from HDFS.
+Usage: hdfs dfs -rm -r <path>
+•	cp
+HDFS Command to copy files from source to destination. This command allows multiple sources as well, in which case the destination must be a directory.
+Usage: hdfs dfs -cp <src> <dest>
+Command: hdfs dfs -cp /user/hadoop/file1 /user/hadoop/file2
+•	mv
+HDFS Command to move files from source to destination. This command allows multiple sources as well, in which case the destination needs to be a directory.
+Usage:  hdfs dfs -mv <src> <dest>
+Command:  hdfs dfs -mv /user/hadoop/file1 /user/hadoop/file2
+•	expunge
+HDFS Command that makes the trash empty.
+Command: hdfs dfs -expunge
+•	rmdir
+HDFS Command to remove the directory.
+Usage: hdfs dfs -rmdir <path>
+Command: hdfs dfs –rmdir /user/Hadoop
+
+
+•	usage
+HDFS Command that returns the help for an individual command.
+Usage: hdfs dfs -usage <command>
+Command: hdfs dfs -usage mkdir
+•	help
+HDFS Command that displays help for given command or all commands if none is specified.
+Command: hdfs dfs -help
+
+Link for more commands: https://images.linoxide.com/hadoop-hdfs-commands-cheatsheet.pdf
+
