@@ -1,0 +1,69 @@
+LINUX BASIC COMMANDS DOCUMENT
+Nano to create file – its an editor basically.
+Eg: nano filename or nano /home/cloudera/filename
+Pwd – gives information or prints working directory (current directory)
+Echo - just a normal print statement 
+Example : echo “hello world”
+Return: hello world
+Any command added with –help gives all possible arguments you can pass to that command with what it returns also. (ex: ls –help)
+Ls – gives the list of commands
+Ls -l – gives content with owner settings, timestamp and also permission information of the files in that particular directory.
+Ls -l > abc.txt – here the list of the files are written to a txt file named abc. Or you can assume that the result of the commands executed are written to the abc.txt file.
+Cd – used to change the directory
+Cd ../ - used to come back to the root from one step ahead
+Cd ~ - will bring you to your home path , executed from anywhere
+Cat – gives the content of the file 
+Eg: cat filename or cat /home/cloudera/abc.txt
+Cat -b – will return the content including line numbers in it but not to blank lines
+Eg: cat -b filename or cat -b /home/cloudera/abc.txt
+Cat -n – will return the content including line numbers in it also to blank lines
+Eg: cat -n filename or cat -n /home/cloudera/abc.txt
+Less – opens content of the file in a fresh window (you can press q to quit from there)
+Eg: less filename or less /home/cloudera/abc.txt
+
+Grep – used to search for something in a file
+Eg: grep word filename or grep word /home/cloudera/abc.txt
+Grep -I – used to search irrespective of case sensitiveness 
+Eg: grep -I word filename or grep word /home/cloudera/abc.txt
+Sort – used to sort the content of the file 
+Eg: sort filename or sort /home/cloudera/abc.txt
+Sort -r – used to sort the content of the file in reverse 
+Eg: sort -r filename or sort -r /home/cloudera/abc.txt
+Sort -n – used to sort the content of the file numerically
+Eg: sort -n filename or sort -n /home/cloudera/abc.txt
+Cp – used to copy file from source to destination
+Eg: cp filename /home/cloudera/demo/
+Cp -v – used to copy the file with verbos (information about the file when copying, something about the process what’s happening during copying, used when copying large files)
+Mv – used to move the file from source to destination
+Eg: mv filename /home/cloudera/demo
+Rm – used to remove the file from a directory
+Eg: rm filename 
+Mkdir – used to make a new directory
+Eg: mkdir /home/cloudera/new_demo
+Touch – used to create multiple files at same time
+Eg: touch file1.txt file2.txt file3.txt
+Rmdir – used to remove directory, complete directory
+Eg: rmdir /home/cloudera/dirname
+Nl – for number of lines
+Eg: nl /home/cloudera/file_path
+Gedit – text editor
+Eg: gedit /home/cloudera/file_path
+
+Stat – display file attributes
+Eg: stat /home/cloudera/file_path
+
+Wc – count bytes/words/lines
+Eg: wc /home/cloudera/file_path
+
+Chown – change file owner
+Eg: chown owner_name file_path (chown new_user /home/cloudera/desktop/abc.txt)
+
+Chgrp – change file group
+Eg: chgrp group_name /home/cloudera/file_path
+
+Ifconfig – display network information / ip address
+
+
+ 
+U = User G = Group W = World
+ r = Read w = write x = execute - = no access
